@@ -1,13 +1,19 @@
---select *
---from SQL_Covid_Project..covid_deaths
---where continent is not null
---order by 3,4
+/*
+Covid 19 Data Exploration with SQL
 
---select *
---from SQL_Covid_Project..covid_vaccinations
---order by 3,4
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
 
--- Select Data that will be used. 
+*/
+
+SELECT *
+FROM SQL_Covid_Project..covid_deaths
+WHERE continent is not null
+ORDER BY 3,4
+
+SELECT *
+FROM SQL_Covid_Project..covid_vaccinations
+WHERE continent is not null
+ORDER BY 3,4 
 
 Select
 	location,
